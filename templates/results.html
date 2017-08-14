@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1 align="center"> Results</h1>
+		<ul>
+		{% for entries in data %}
+		<form action="/page/{{entries}}" method ="GET">
+			<li><a href="page/{{entries}}", id="/{{entries}}" name="link">{{ entries|e }}</a><br/></li>
+		</form>
+		{% endfor %}
+</ul>
+	</body>
+</html>
